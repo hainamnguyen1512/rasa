@@ -1,0 +1,7 @@
+title: mobifonebot
+subtitle: Happy to help
+inputTextFieldHint: Type your message...
+initPayload: /thong_tin_san_pham
+hideWhenNotConnected: true
+customData:
+  language: vi

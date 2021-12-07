@@ -1,0 +1,70 @@
+actions:
+  - action_botfront_disambiguation
+  - action_botfront_disambiguation_followup
+  - action_botfront_fallback
+  - action_botfront_mapping
+  - utter_S_c8jYyAA
+  - utter_ask_hoi_mua_hang
+  - utter_bot_chao
+  - utter_default
+  - utter_get_started
+  - utter_unclear
+  - utter_wDHqPkE7D
+entities: []
+forms: {}
+intents:
+  - greet
+responses:
+  utter_S_c8jYyAA:
+    - image: >-
+        https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg
+      language: vi
+  utter_ask_hoi_mua_hang:
+    - language: vi
+      text: Bạn muốn mua sản phẩm gì?
+  utter_bot_chao:
+    - elements:
+        - buttons:
+            - payload: /emai_marketing
+              title: email marketing
+              type: postback
+          image_url: >-
+            https://kdigimind.com/wp-content/uploads/2021/01/khai-niem-marketing-la-gi.jpg
+          subtitle: Giai phap marketing
+          title: Marketing
+      language: vi
+  utter_default:
+    - language: vi
+      text: Tin nhắn của quý khách sẽ được chuyển đến nhân viên tư vấn
+  utter_get_started:
+    - image: >-
+        https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg
+      language: vi
+  utter_unclear:
+    - language: vi
+      text: 'Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. '
+  utter_wDHqPkE7D:
+    - language: vi
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: xin chào thông tin sản phẩm
+session_config: {}
+slots:
+  cust_gender:
+    type: text
+  cust_name:
+    type: text
+  disambiguation_message:
+    type: unfeaturized
+  fallback_language:
+    initial_value: vi
+    type: unfeaturized
+  hoi_mua_hang:
+    type: unfeaturized
+  product:
+    type: text

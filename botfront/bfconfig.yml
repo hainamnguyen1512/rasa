@@ -1,0 +1,10 @@
+name: mobifonebot
+namespace: bf-mobifone-bot
+defaultLanguage: vi
+nluThreshold: 0.75
+timezoneOffset: 0
+allowContextualQuestions: false
+instance:
+  name: Default Instance
+  host: 'http://10.4.200.120:5005'
+  projectId: 8yrgFSj5heBvG5uPD

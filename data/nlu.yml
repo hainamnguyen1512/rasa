@@ -1,0 +1,391 @@
+version: "2.0"
+nlu:
+- intent: ask_func_list
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      biết gì mà nói
+  - text: |
+      biết làm gì
+  - text: |
+      bạn biết làm gì
+  - text: |
+      bạn biết được những lĩnh vực gì
+  - text: |
+      bạn có thể làm gì
+  - text: |
+      bạn có thể làm được mấy chức năng
+  - text: |
+      bạn có thể làm được những gì
+    metadata:
+      canonical: true
+  - text: |
+      bạn có tư vấn giúp mình được không
+  - text: |
+      bạn có ích trong những việc gì
+  - text: |
+      bạn giúp được gì nào
+  - text: |
+      bạn giúp được mình gì nào
+  - text: |
+      bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+  - text: |
+      bạn giỏi nhất làm gì
+  - text: |
+      bạn hữu dụng như thế nào
+  - text: |
+      bạn tệ nhất trong việc gì
+  - text: |
+      cho mình biết bạn làm được gì nhé
+  - text: |
+      chẳng biết bạn làm được gì
+  - text: |
+      chức năng của bạn là gì
+  - text: |
+      có biết gì
+  - text: |
+      có làm được gì
+  - text: |
+      có làm được trò gì
+  - text: |
+      em biết làm gì
+  - text: |
+      em giúp được gì
+  - text: |
+      em làm được gì
+  - text: |
+      giúp giúp cái gì
+  - text: |
+      giúp được gì
+  - text: |
+      kể cho mình biết những việc bạn có thể làm được nhé
+  - text: |
+      kể xem bạn làm được gì
+  - text: |
+      làm được gì
+  - text: |
+      lĩnh vực gì bạn giỏi nhất
+  - text: |
+      mày biết làm gì
+  - text: |
+      mày làm được gì
+  - text: |
+      mình tò mò về những việc bạn làm được
+  - text: |
+      nói cho mình về những việc bạn giúp được mình
+  - text: |
+      việc gì bạn làm được
+- intent: ask_name
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      anh tên gì
+  - text: |
+      bạn có vui lòng cho mình biết tên được không
+  - text: |
+      bạn tên gì
+    metadata:
+      canonical: true
+  - text: |
+      bạn tên gì thế
+  - text: |
+      bạn tên là gì
+  - text: |
+      cho em xin tên của anh ạ
+  - text: |
+      cho em xin tên của chị ạ
+  - text: |
+      cho mình hỏi tên nhé
+  - text: |
+      chúng ta nên biết tên nhau nhỉ?
+  - text: |
+      chị tên gì
+  - text: |
+      em tên gì
+  - text: |
+      [em](cust_gender) tên là gì thế
+  - text: |
+      mình muốn biết tên bạn
+  - text: |
+      mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+  - text: |
+      tên bạn
+  - text: |
+      tên bạn trong tiếng việt là gì
+  - text: |
+      tên của anh là gì
+  - text: |
+      tên của bạn là gì
+  - text: |
+      tên của chị là gì
+  - text: |
+      tên em
+  - text: |
+      tên em là gì
+  - text: |
+      tên gì
+  - text: |
+      vui lòng cho mình biết tên nhé
+  - text: |
+      vậy thì tên bạn là gì
+  - text: |
+      xin phép hỏi tên của bạn
+  - text: |
+      được biết tên bạn thì tốt nhỉ
+  - text: |
+      để tiện xưng hộ thì tên bạn là gì
+- intent: bye
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Tạm biệt
+  - text: |
+      chào tạm biệt
+  - text: |
+      chào tạm biệt em
+  - text: |
+      tạm biệt
+    metadata:
+      canonical: true
+  - text: |
+      tạm biệt em
+  - text: |
+      tạm biệt em nhé
+- intent: gap_nhan_vien_tu_van
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Anh cần gặp nhân viên tư vấn
+    metadata:
+      canonical: true
+  - text: |
+      Cho anh gặp nhân viên tư vấn
+  - text: |
+      Cho tôi gặp nhân viên tư vấn
+  - text: |
+      cho chị nói chuyện với nhân viên tư vấn
+  - text: |
+      liên hệ
+- intent: giai_phap_ai_chatbot
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Giải pháp [AI chat bot]{"entity": "product", "value": "Ai chatbot"}
+    metadata:
+      canonical: true
+  - text: |
+      Giải pháp [Ai chat bot]{"entity": "product", "value": "Ai chatbot"}
+- intent: giai_phap_marketing
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Các giải pháp [marketing](product) mà hệ thống cung cấp
+    metadata:
+      canonical: true
+  - text: |
+      Giải pháp [marketing](product)
+  - text: |
+      Thông tin về giải pháp [marketing](product)
+  - text: |
+      Tư vấn cho mình về [marketing](product)
+  - text: |
+      [marketing](product)
+- intent: giai_phap_sales
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Giải pháp [sales](product)
+    metadata:
+      canonical: true
+  - text: |
+      [sales](product)
+- intent: greet
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Xin chào
+  - text: |
+      anh ơi
+  - text: |
+      bạn ơi
+  - text: |
+      chào
+  - text: |
+      chào bạn
+  - text: |
+      cháu ơi
+  - text: |
+      chị ơi
+  - text: |
+      có ai giúp mình không
+  - text: |
+      có ai ở đây không?
+  - text: |
+      hello
+  - text: |
+      hey
+  - text: |
+      hi
+  - text: |
+      mình có vài câu hỏi
+  - text: |
+      xin chào
+    metadata:
+      canonical: true
+- intent: khuyen_mai_hien_tai
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Các chương trình khuyến mãi đang diễn ra
+    metadata:
+      canonical: true
+  - text: |
+      Hiện tại đang có những chương trình khuyến mãi nào
+- intent: khuyen_mai_tat_ca
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Toàn bộ chương trình khuyến mãi
+    metadata:
+      canonical: true
+  - text: |
+      Tất cả các chương trình khuyến mãi
+- intent: main_menu
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Bạn có gì?
+    metadata:
+      canonical: true
+  - text: |
+      Bạn có thể giúp gì cho tôi
+  - text: |
+      main menu
+  - text: |
+      menu
+- intent: mua_hang
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      [Anh](cust_gender) muốn mua giải pháp [marketing tự động]{"entity": "product", "value": "marketing"}
+    metadata:
+      canonical: true
+  - text: |
+      [Anh](cust_gender) muốn mua sản phẩm [marketing](product) trong [1 năm](date)
+    metadata:
+      canonical: true
+  - text: |
+      [Chị](cust_gender) muốn mua giải pháp [bán hàng]{"entity": "product", "value": "sales"} trong [3 tháng](date)
+    metadata:
+      canonical: true
+  - text: |
+      [Cô](cust_gender) muốn mua giải pháp [AI chatbot]{"entity": "product", "value": "marketing"} trong [6 tháng](date)
+    metadata:
+      canonical: true
+  - text: |
+      [Em](cust_gender) muốn mua [giải pháp marketing tự động]{"entity": "product", "value": "marketing"}
+    metadata:
+      canonical: true
+  - text: |
+      Mình muốn mua giải pháp [sales](product)
+    metadata:
+      canonical: true
+  - text: |
+      Mình muốn mua hàng
+    metadata:
+      canonical: true
+  - text: |
+      Tôi muốn mua giải pháp [marketing](product)
+    metadata:
+      canonical: true
+  - text: |
+      Tôi muốn mua hàng
+  - text: |
+      Tôi muốn mua sản phẩm này
+  - text: |
+      anh muốn mua
+  - text: |
+      anh muốn mua giải pháp bán hàng trong 2 năm
+  - text: |
+      anh muốn mua giải pháp [marketing tự động](product)
+    metadata:
+      canonical: true
+  - text: |
+      [chị](cust_gender) muốn mua giải pháp [tiếp thị tự động]{"entity": "product", "value": "marketing"}
+    metadata:
+      canonical: true
+  - text: |
+      mặt hàng này giá bao nhiêu
+- intent: thank
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      chuẩn
+    metadata:
+      canonical: true
+  - text: |
+      cám ơn
+  - text: |
+      cảm ơn
+  - text: |
+      cảm ơn em
+  - text: |
+      cảm ơn em nhiều nhé
+  - text: |
+      hay
+  - text: |
+      ok
+  - text: |
+      siêu
+  - text: |
+      thank you
+  - text: |
+      thanks
+  - text: |
+      tuyệt
+- intent: thong_tin_san_pham
+  metadata:
+    language: vi
+  examples:
+  - text: |
+      Bạn có những giải pháp gì?
+    metadata:
+      canonical: true
+  - text: |
+      Các giải pháp cung cấp
+  - text: |
+      Các giải pháp mà bạn đang cung cấp
+  - text: |
+      Giải pháp
+  - text: |
+      Giải pháp [bán hàng]{"entity": "product", "value": "sales"} của bạn có những tính năng gì
+    metadata:
+      canonical: true
+  - text: |
+      Giải pháp mang lại cho doanh nghiệp của tôi
+  - text: |
+      Thông tin sản phẩm
+  - text: |
+      các tính năng mà [giải pháp bán hàng thông minh]{"entity": "product", "value": "sales"} mang lại
+  - text: |
+      sản phẩm
+- synonym: marketing
+  examples: |
+    - tiếp thị tự động
+    - AI chatbot
+- synonym: sales
+  examples: |
+    - bán hàng

@@ -1,0 +1,31 @@
+stories:
+  - story: Giải pháp AI Chat Bot
+    steps:
+      - intent: greet
+        entities: []
+      - action: utter_bot_chao
+    metadata:
+      group: Thông tin sản phẩm
+  - story: Thông tin sản phẩm (2)
+    steps:
+      - or:
+          - intent: thong_tin_san_pham
+            entities: []
+          - intent: trigger_L8VOFLWq-
+            entities: []
+      - action: utter_wDHqPkE7D
+    metadata:
+      rules:
+        - trigger:
+            when: always
+            triggerLimit__DISPLAYIF: false
+            device__DISPLAYIF: false
+            eventListeners__DISPLAYIF: false
+            timeOnPage__DISPLAYIF: true
+            timeOnPage: 2
+            url__DISPLAYIF: false
+          text__DISPLAYIF: true
+          text: hello
+      triggerIntent: trigger_L8VOFLWq-
+      group: Thông tin sản phẩm
+rules: []
